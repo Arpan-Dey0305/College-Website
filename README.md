@@ -1,4 +1,4 @@
-# Abacus Institute of Engineering and Management Website
+# College Website
 
 A responsive and interactive website for *Abacus Institute of Engineering and Management (AIEM), built using **HTML, CSS, and JavaScript*. This project showcases key features of the institute and provides users with a smooth navigation experience.
 
