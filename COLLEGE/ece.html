@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Electronics & Communication Engineering - Abacus Institute</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS Animation Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9faff;
+        color: #333;
+        margin: 0;
+      }
+
+      .ece-content {
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 20px;
+      }
+
+      h2,
+      h3 {
+        color: #002b5c;
+        text-align: center;
+      }
+
+      p {
+        line-height: 1.8;
+        font-size: 1.05rem;
+        margin-bottom: 20px;
+      }
+
+      .section-block {
+        margin-bottom: 60px;
+      }
+
+      /* Gallery */
+      .images-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .images-row img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        transition:
+          transform 0.4s ease,
+          box-shadow 0.4s ease;
+      }
+
+      .images-row img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+      }
+
+      /* CTA Buttons */
+      .cta-buttons {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .cta-buttons a {
+        margin: 10px;
+        padding: 12px 28px;
+        background: linear-gradient(90deg, #002b5c, #0146a6);
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition:
+          background 0.3s ease,
+          transform 0.3s ease;
+      }
+
+      .cta-buttons a:hover {
+        background: linear-gradient(90deg, #0146a6, #002b5c);
+        transform: translateY(-2px);
+      }
+
+      /* Counters */
+      .counters {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+        margin: 50px 0;
+      }
+
+      .counter {
+        background: #fff;
+        padding: 25px 35px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+      }
+
+      .counter:hover {
+        transform: translateY(-5px);
+      }
+
+      .counter h3 {
+        font-size: 2.2rem;
+        color: #0146a6;
+        margin-bottom: 5px;
+      }
+
+      .counter p {
+        margin: 0;
+        font-weight: 600;
+      }
+
+      /* Accordion for Labs */
+      .accordion {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .accordion-item {
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+      }
+
+      .accordion-header {
+        padding: 15px 20px;
+        cursor: pointer;
+        font-weight: bold;
+        background: #e8f0fe;
+        transition: background 0.3s ease;
+      }
+
+      .accordion-header:hover {
+        background: #d0e1ff;
+      }
+
+      .accordion-body {
+        max-height: 0;
+        padding: 0 20px;
+        overflow: hidden;
+        transition:
+          max-height 0.4s ease,
+          padding 0.3s ease;
+        background: #fafbff;
+      }
+
+      .accordion-body p {
+        padding: 15px 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="ece-content" data-aos="fade-up">
+      <h2>Electronics & Communication Engineering (ECE)</h2>
+
+      <!-- Counters -->
+      <div class="counters" data-aos="fade-up">
+        <div class="counter">
+          <h3 id="students">0</h3>
+          <p>Students</p>
+        </div>
+        <div class="counter">
+          <h3 id="faculty">0</h3>
+          <p>Faculty</p>
+        </div>
+        <div class="counter">
+          <h3 id="labs">0</h3>
+          <p>Labs</p>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="section-block" data-aos="fade-right">
+        <h3>About the Department</h3>
+        <p>
+          The Department of Electronics & Communication Engineering at Abacus
+          Institute builds a strong foundation in electronics fundamentals and
+          modern communication systems. The curriculum covers digital signal
+          processing, VLSI, embedded systems, and wireless technologies.
+        </p>
+        <p>
+          With a blend of theoretical knowledge and hands-on training, students
+          are equipped to contribute to rapidly evolving electronics and
+          communication industries.
+        </p>
+      </div>
+
+      <!-- Labs Accordion -->
+      <div class="section-block" data-aos="fade-left">
+        <h3>Labs & Facilities</h3>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">Embedded Systems Lab</div>
+            <div class="accordion-body">
+              <p>
+                Hands-on training on microcontrollers, IoT devices, and embedded
+                platforms.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Communication Systems Lab</div>
+            <div class="accordion-body">
+              <p>
+                Experiments in wireless, optical, and digital communication
+                systems.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">VLSI Design & Simulation Lab</div>
+            <div class="accordion-body">
+              <p>
+                Learn chip design, FPGA programming, and circuit simulations.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Digital Signal Processing Lab</div>
+            <div class="accordion-body">
+              <p>
+                Hands-on experience with DSP algorithms, filters, and signal
+                analysis.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              Microprocessor & Microcontroller Lab
+            </div>
+            <div class="accordion-body">
+              <p>
+                Practice programming and interfacing with microprocessor and
+                microcontroller systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student Activities -->
+      <div class="section-block" data-aos="fade-up">
+        <h3>Student Activities</h3>
+        <p>
+          ECE students participate in IoT challenges, circuit hackathons,
+          project expos, and technical seminars through the ECE Club and
+          Institute Innovation Council.
+        </p>
+      </div>
+
+      <!-- Career Opportunities -->
+      <div class="section-block" data-aos="fade-right">
+        <h3>Career Opportunities</h3>
+        <p>
+          ECE graduates pursue careers in telecom, embedded systems, automation,
+          software development, and chip design industries. Recruiters include
+          ISRO, DRDO, Qualcomm, and Infosys.
+        </p>
+      </div>
+
+      <!-- Gallery -->
+      <div class="section-block" data-aos="fade-up">
+        <h3>Gallery</h3>
+        <div class="images-row">
+          <img
+            src="image/ece1.png"
+            alt="Communication Systems Lab"
+            data-aos="zoom-in"
+          />
+          <img
+            src="image/ece2.png"
+            alt="Embedded Systems Workshop"
+            data-aos="zoom-in"
+          />
+          <img
+            src="image/ece3.png"
+            alt="Circuit Design Projects"
+            data-aos="zoom-in"
+          />
+        </div>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="cta-buttons" data-aos="fade-up">
+        <a href="index.html">← Back to Home</a>
+        <a href="mailto:adey011003@gmail.com">Join Us →</a>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+
+      // Accordion functionality
+      const headers = document.querySelectorAll(".accordion-header");
+      headers.forEach((header) => {
+        header.addEventListener("click", () => {
+          const body = header.nextElementSibling;
+          if (body.style.maxHeight) {
+            body.style.maxHeight = null;
+            body.style.padding = "0 20px";
+          } else {
+            document.querySelectorAll(".accordion-body").forEach((b) => {
+              b.style.maxHeight = null;
+              b.style.padding = "0 20px";
+            });
+            body.style.maxHeight = body.scrollHeight + "px";
+            body.style.padding = "15px 20px";
+          }
+        });
+      });
+
+      // Counter Animation
+      function animateCounter(id, target) {
+        let element = document.getElementById(id);
+        let count = 0;
+        let increment = target / 100;
+        let interval = setInterval(() => {
+          count += increment;
+          if (count >= target) {
+            count = target;
+            clearInterval(interval);
+          }
+          element.innerText =
+            Math.floor(count) + (id === "students" ? "+" : "");
+        }, 20);
+      }
+
+      animateCounter("students", 460);
+      animateCounter("faculty", 12);
+      animateCounter("labs", 5);
+    </script>
+  </body>
+</html>

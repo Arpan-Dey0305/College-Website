@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mechanical Engineering Department - Abacus Institute</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS Animation Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9faff;
+        color: #333;
+        margin: 0;
+      }
+
+      .me-content {
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 20px;
+      }
+
+      h2,
+      h3 {
+        color: #002b5c;
+        text-align: center;
+      }
+
+      p {
+        line-height: 1.8;
+        font-size: 1.05rem;
+        margin-bottom: 20px;
+      }
+
+      .section-block {
+        margin-bottom: 60px;
+      }
+
+      /* Gallery */
+      .images-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      .images-row img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        transition:
+          transform 0.4s ease,
+          box-shadow 0.4s ease;
+      }
+
+      .images-row img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+      }
+
+      /* CTA Buttons */
+      .cta-buttons {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .cta-buttons a {
+        margin: 10px;
+        padding: 12px 28px;
+        background: linear-gradient(90deg, #002b5c, #0146a6);
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition:
+          background 0.3s ease,
+          transform 0.3s ease;
+      }
+
+      .cta-buttons a:hover {
+        background: linear-gradient(90deg, #0146a6, #002b5c);
+        transform: translateY(-2px);
+      }
+
+      /* Counters */
+      .counters {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+        margin: 50px 0;
+      }
+
+      .counter {
+        background: #fff;
+        padding: 25px 35px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease;
+      }
+
+      .counter:hover {
+        transform: translateY(-5px);
+      }
+
+      .counter h3 {
+        font-size: 2.2rem;
+        color: #0146a6;
+        margin-bottom: 5px;
+      }
+
+      .counter p {
+        margin: 0;
+        font-weight: 600;
+      }
+
+      /* Accordion for Labs */
+      .accordion {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      .accordion-item {
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+      }
+
+      .accordion-header {
+        padding: 15px 20px;
+        cursor: pointer;
+        font-weight: bold;
+        background: #e8f0fe;
+        transition: background 0.3s ease;
+      }
+
+      .accordion-header:hover {
+        background: #d0e1ff;
+      }
+
+      .accordion-body {
+        max-height: 0;
+        padding: 0 20px;
+        overflow: hidden;
+        transition:
+          max-height 0.4s ease,
+          padding 0.3s ease;
+        background: #fafbff;
+      }
+
+      .accordion-body p {
+        padding: 15px 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="me-content" data-aos="fade-up">
+      <h2>Mechanical Engineering (ME)</h2>
+
+      <!-- Counters -->
+      <div class="counters" data-aos="fade-up">
+        <div class="counter">
+          <h3 id="students">0</h3>
+          <p>Students</p>
+        </div>
+        <div class="counter">
+          <h3 id="faculty">0</h3>
+          <p>Faculty</p>
+        </div>
+        <div class="counter">
+          <h3 id="labs">0</h3>
+          <p>Labs</p>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="section-block" data-aos="fade-right">
+        <h3>About the Department</h3>
+        <p>
+          The Mechanical Engineering Department at Abacus Institute offers a
+          solid foundation in core mechanical sciences, including
+          thermodynamics, robotics, fluid mechanics, and material science. The
+          curriculum fosters problem-solving, innovation, and practical
+          engineering skills.
+        </p>
+        <p>
+          Hands-on learning through workshops, industrial projects, and
+          simulation labs empowers students to tackle real-world mechanical
+          challenges.
+        </p>
+      </div>
+
+      <!-- Labs Accordion -->
+      <div class="section-block" data-aos="fade-left">
+        <h3>Labs & Facilities</h3>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header">Thermal Engineering Lab</div>
+            <div class="accordion-body">
+              <p>
+                Focus on thermodynamics experiments and heat transfer
+                simulations.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Fluid Mechanics & Machinery Lab</div>
+            <div class="accordion-body">
+              <p>Study fluid flow, pumps, turbines, and machinery operation.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">CAD/CAM Lab</div>
+            <div class="accordion-body">
+              <p>
+                Practical sessions for computer-aided design and manufacturing.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Strength of Materials Lab</div>
+            <div class="accordion-body">
+              <p>
+                Material testing, stress-strain analysis, and structural
+                simulations.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">Robotics & Mechatronics Lab</div>
+            <div class="accordion-body">
+              <p>
+                Hands-on training in robotics, automation, and mechatronic
+                systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Student Activities -->
+      <div class="section-block" data-aos="fade-up">
+        <h3>Student Activities</h3>
+        <p>
+          Students actively engage in design competitions, SAE events,
+          workshops, and industrial training programs. The “Mech Masters Club”
+          organizes technical events and mentorship programs.
+        </p>
+      </div>
+
+      <!-- Career Opportunities -->
+      <div class="section-block" data-aos="fade-right">
+        <h3>Career Opportunities</h3>
+        <p>
+          Graduates are employed in sectors like automotive, aerospace,
+          manufacturing, power generation, and R&D. Job roles include design
+          engineer, maintenance engineer, production planner, and thermal
+          analyst.
+        </p>
+      </div>
+
+      <!-- Gallery -->
+      <div class="section-block" data-aos="fade-up">
+        <h3>Gallery</h3>
+        <div class="images-row">
+          <img src="image/me1.png" alt="Thermal Lab" data-aos="zoom-in" />
+          <img src="image/me2.png" alt="Robotics Workshop" data-aos="zoom-in" />
+          <img src="image/me3.png" alt="CAD Training" data-aos="zoom-in" />
+        </div>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="cta-buttons" data-aos="fade-up">
+        <a href="index.html">← Back to Home</a>
+        <a href="mailto:adey011003@gmail.com">Join Us →</a>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+
+      // Accordion functionality
+      const headers = document.querySelectorAll(".accordion-header");
+      headers.forEach((header) => {
+        header.addEventListener("click", () => {
+          const body = header.nextElementSibling;
+          if (body.style.maxHeight) {
+            body.style.maxHeight = null;
+            body.style.padding = "0 20px";
+          } else {
+            document.querySelectorAll(".accordion-body").forEach((b) => {
+              b.style.maxHeight = null;
+              b.style.padding = "0 20px";
+            });
+            body.style.maxHeight = body.scrollHeight + "px";
+            body.style.padding = "15px 20px";
+          }
+        });
+      });
+
+      // Counter Animation
+      function animateCounter(id, target) {
+        let element = document.getElementById(id);
+        let count = 0;
+        let increment = target / 100;
+        let interval = setInterval(() => {
+          count += increment;
+          if (count >= target) {
+            count = target;
+            clearInterval(interval);
+          }
+          element.innerText =
+            Math.floor(count) + (id === "students" ? "+" : "");
+        }, 20);
+      }
+
+      animateCounter("students", 400);
+      animateCounter("faculty", 12);
+      animateCounter("labs", 5);
+    </script>
+  </body>
+</html>

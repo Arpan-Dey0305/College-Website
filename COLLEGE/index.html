@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Abacus Institute of Engineering and Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- AOS Animation -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="image/logo.png" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-left">
+            <a href="index.html">
+              <img
+                src="image/logo.png"
+                alt="Abacus Institute Logo"
+                class="logo"
+              />
+            </a>
+          </div>
+          <div class="nav-center">
+            <ul id="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li id="nav-line">|</li>
+              <li><a href="#about">About</a></li>
+              <li id="nav-line">|</li>
+              <li><a href="#departments">Departments</a></li>
+              <li id="nav-line">|</li>
+              <li><a href="#contact-news">Contact</a></li>
+              <li id="nav-line">|</li>
+              <li>
+                <a href="mailto:adey011003@gmail.com" id="join"
+                  ><i class="fa-solid fa-up-right-from-square"></i> Join Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="overlay" data-aos="zoom-in" data-aos-duration="1200">
+        <h1>Welcome to Abacus Institute of Engineering and Management</h1>
+        <p>Transforming You, Empowering the Future</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container about" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p>
+          Abacus Institute of Engineering and Management provides you an
+          exceptional educational environment of full attention that you
+          deserve. The campus is perfect fit for you where you will get a chance
+          to transform yourself and in turn transform the world as well.
+        </p>
+        <p>
+          The ABACUS family came into being in 2008 and has since evolved into a
+          leading institute under JIS Group and Techno India Group, offering
+          quality education and industry-ready programs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section class="section" id="departments">
+      <div class="container" data-aos="fade-up">
+        <h2>Our Departments</h2>
+        <div class="cards">
+          <a
+            href="cse.html"
+            class="card"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            ><h3>Computer Science</h3>
+            <p>Learn advanced computing, AI, and software development.</p></a
+          >
+          <a href="me.html" class="card" data-aos="zoom-in" data-aos-delay="200"
+            ><h3>Mechanical</h3>
+            <p>Study mechanics, thermodynamics, and design engineering.</p></a
+          >
+          <a href="ee.html" class="card" data-aos="zoom-in" data-aos-delay="300"
+            ><h3>Electrical</h3>
+            <p>Explore circuits, power systems, and electromagnetism.</p></a
+          >
+          <a
+            href="ece.html"
+            class="card"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            ><h3>Electronics</h3>
+            <p>Explore embedded systems, communications, and IoT.</p></a
+          >
+          <a href="ce.html" class="card" data-aos="zoom-in" data-aos-delay="500"
+            ><h3>Civil</h3>
+            <p>Design infrastructure and master the art of construction.</p></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
+      <div class="container" data-aos="fade-up">
+        <h2>Our Achievements</h2>
+        <div class="counters">
+          <div class="counter">
+            <h3 id="students">0</h3>
+            <p>Students</p>
+          </div>
+          <div class="counter">
+            <h3 id="faculty">0</h3>
+            <p>Faculty</p>
+          </div>
+          <div class="counter">
+            <h3 id="labs">0</h3>
+            <p>Labs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+      <div class="container" data-aos="fade-up">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial">
+            <p>
+              "AIEM helped me grow into a confident engineer with practical
+              skills."
+            </p>
+            <h4>- Arpan Dey, CSE</h4>
+          </div>
+          <div class="testimonial">
+            <p>
+              "The faculty and labs are top-notch, making learning fun and
+              effective."
+            </p>
+            <h4>- Priya Sen, Mechanical</h4>
+          </div>
+          <div class="testimonial">
+            <p>
+              "A campus environment that motivates innovation and creativity."
+            </p>
+            <h4>- Ankit Das, ECE</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+      <div class="container" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">What are the admission criteria?</h4>
+            <p class="faq-answer">
+              Admissions are based on merit and entrance exams as per AIEM
+              norms.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">
+              Does the college provide hostel facilities?
+            </h4>
+            <p class="faq-answer">
+              Yes, separate hostels for boys and girls with modern amenities.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">What courses are offered in CSE?</h4>
+            <p class="faq-answer">
+              B.Tech, M.Tech, and research programs in Computer Science.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">Are scholarships available?</h4>
+            <p class="faq-answer">
+              Yes, merit-based and need-based scholarships are offered.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">What is the fee structure?</h4>
+            <p class="faq-answer">
+              The fee structure varies by program; details available on the
+              official site.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">Are internships provided?</h4>
+            <p class="faq-answer">
+              Yes, AIEM facilitates internships in reputed companies.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">What are the library facilities?</h4>
+            <p class="faq-answer">
+              A modern library with digital access and reading rooms.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">Is campus Wi-Fi available?</h4>
+            <p class="faq-answer">
+              Yes, campus-wide high-speed Wi-Fi is available for students.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">Are sports facilities available?</h4>
+            <p class="faq-answer">
+              Yes, facilities for indoor and outdoor games are provided.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">What is the placement record?</h4>
+            <p class="faq-answer">
+              AIEM has an excellent placement record with top companies visiting
+              campus.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">Are there cultural activities?</h4>
+            <p class="faq-answer">
+              Yes, various fests, workshops, and clubs are active on campus.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">
+              What transport facilities are available?
+            </h4>
+            <p class="faq-answer">
+              Bus services and connectivity via train and road are available.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">Are labs well-equipped?</h4>
+            <p class="faq-answer">
+              Yes, AIEM has state-of-the-art labs for practical learning.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">Is there an alumni network?</h4>
+            <p class="faq-answer">
+              Yes, alumni are connected through events and mentoring programs.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 onclick="toggleFAQ(this)">
+              Can students participate in research projects?
+            </h4>
+            <p class="faq-answer">
+              Yes, AIEM encourages research and provides guidance and resources.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section" id="contact-news">
+      <div class="container contact-news-container" data-aos="fade-up">
+        <!-- Contact Section -->
+        <div class="contact-box">
+          <h2>Contact Us</h2>
+          <p>Phone: +91 8710042392 / +91 9474843690</p>
+          <p>Email: admission.aiem@jisgroup.org</p>
+          <p>Regd. Office: 7, Sarat Bose Road, Kolkata-700020, W.B.</p>
+          <p>Campus: Natungram, Mogra, Hooghly, Pin-712148, W.B.</p>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-box">
+          <h2>Subscribe to Our Newsletter</h2>
+          <form onsubmit="subscribeNewsletter(event)">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p id="subscription-msg"></p>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll-to-top Button -->
+    <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer Section -->
+    <footer class="footer" data-aos="fade-in">
+      <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-section about">
+          <h3>AIEM</h3>
+          <p>Empowering students to become tomorrow’s innovators.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#contact-news">Contact</a></li>
+            <li><a href="mailto:adey011003@gmail.com">Join Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section contact">
+          <h4>Contact</h4>
+          <p>Email: admission.aiem@jisgroup.org</p>
+          <p>Phone: +91 8710042392 / +91 9474843690</p>
+          <p>Address: Natungram, Mogra, Hooghly, Pin-712148, W.B.</p>
+        </div>
+
+        <!-- Anti-Ragging Image -->
+        <div class="footer-section image">
+          <img src="image/ragging.png" alt="Anti-Ragging" />
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Abacus Institute of Engineering and Management. All rights
+          reserved.
+        </p>
+        <p>This project is created for educational purpose, by Arpan Dey.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
